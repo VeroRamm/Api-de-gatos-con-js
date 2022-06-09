@@ -1,55 +1,74 @@
 body{
-    background-color: #141a15;
+    background-color: #17351c;
     box-sizing: content-box;
-    margin-left: 15%;
+    margin: 0;
     font-family: 'Comfortaa', cursive;
     scroll-behavior: smooth;
 }
 header{
-    background-color: #141a15;
-    color: #fff;
+    background-color: #196b27;
+    opacity: 0.9;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     padding: 10px;
-    text-align: center;
-    font-size: 30px;
+    box-shadow: 0px 0px 10px #000;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+    font-size: 30px;
     gap: 30px;
 }
-header img{
-    border-radius: 50%;
-}
-.gato{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+.buscar{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 20px;
+    padding: 0 20px;
+    margin-top: 10%;
+    display: inline;
+    transition: all 0.5s;
+    margin-left: 20%;
     
-    
 }
-.tarjeta{
-    border: 2px solid rgb(245, 242, 242);
-    width: 200px;
-    height: 200px;
-    background-color: aliceblue;
-    border-radius: 10px; 
+button{
+    width: 10%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 20px;
+    padding: 0 20px;
 }
-.tarjeta img{
-    border-radius: 10px;
-    object-fit: scale-down;
-    border: 1px solid #000;
-}
-.arriba{
-   display: flex;
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    
 }
+li{
+    width: 40%;
+    border: #34c54c solid 1px;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+} 
 a{
     text-decoration: none;
     color: #fff;
 }
-
 @media screen and (max-width: 756px){
     .body{
         margin-left: 0;

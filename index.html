@@ -15,28 +15,19 @@
         <h1>Gatos</h1> 
         <img src="./imag/gato negro.jpg" alt="gato" width="100px">
         <a name="arriba"></a>
-       
     </header>
     <main id="contenedor">
-        <div id="gatos" class="gato">
-            <div v-for = "(cat, index) in gatos" :key="index" class="tarj" >
-                <table class="tarjeta">
-                    <tr>
-                        <td><img :src="cat.Image" alt="">  
-                        <h2>{{cat.Name}}</h2>
-                        <p> <span style="font-weight:bold ;text-decoration:underline">Descripcion</span>: {{cat.Description}}</p></td>
-                     </tr>
-                </table>   
-            </div>
+        <input class="buscar" id="buscar" type="text" name="buscar" target="_blank" placeholder="Que gatito busca?">
+        <button id="boton">Buscar</button>
+        <div id="cats" class="gato">
+           
         </div>
-        <div>
-            <a href="#arriba" class="arriba"><img src="./imag/gato marron.jpg" alt="Arriba" width="90px">Subir</a>
-        </div>
+      
     </main>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="./js/main.js"></script>
+   
+    <script src="./js/main.js" type="module"></script>
     
 </body>
 </html>
